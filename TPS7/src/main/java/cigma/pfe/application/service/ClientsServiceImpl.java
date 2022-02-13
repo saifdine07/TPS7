@@ -22,6 +22,23 @@ public class ClientsServiceImpl  implements IClientsService{
 		
 		iclientsDao.save(c);
 	}
+
+	@Override
+	public Clients update(Clients c) {
+		return iclientsDao.update(c);
+	}
+
+	@Override
+	public void delete(Clients c) {
+		iclientsDao.delete(c);
+		
+	}
+
+	@Override
+	public Clients findById(int idClients) {
+		// TODO Auto-generated method stub
+		return iclientsDao.findById(idClients);
+	}
 	
 	
 

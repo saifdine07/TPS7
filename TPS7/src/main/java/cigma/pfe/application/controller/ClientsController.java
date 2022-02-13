@@ -14,6 +14,19 @@ public class ClientsController {
 		iclientsService.save(c);
 	}
 	
+	public Clients update(Clients c) {
+		return iclientsService.update(c);
+		
+	}
+	
+	public void delete(Clients c) {
+		iclientsService.delete(c);
+	}
+	
+	public Clients findById(int idClients) {
+		return iclientsService.findById(idClients);
+		
+	}
 	
 	public ClientsController(IClientsService icommandService) {
 		this.iclientsService = icommandService;

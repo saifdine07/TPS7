@@ -16,6 +16,8 @@ public class Clients {
 	private String name;
 	
 	
+	
+	
 	public Clients( String name) {
 		
 		this.name = name;
@@ -24,6 +26,19 @@ public class Clients {
 
 	public Clients() {
 		
+	}
+	
+	
+
+
+	public Clients(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+
+	public Clients(int id) {
+		this.id = id;
 	}
 	
 	

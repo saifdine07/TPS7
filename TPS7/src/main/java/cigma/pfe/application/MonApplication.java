@@ -1,4 +1,4 @@
-package cigma.pfe.applications;
+package cigma.pfe.application;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,6 +17,19 @@ public class MonApplication {
 		
 		Clients c = new Clients("c1");
 		ctrl.save(c);
+		
+		ctrl.save(new Clients("OMAR"));
+		ctrl.save(new Clients("SIHAM"));
+		ctrl.save(new Clients("AHMED"));
+		ctrl.save(new Clients("FARAH"));
+		// Test modify use case for client with id==1
+		ctrl.update(new Clients(6,"new Name"));
+		
+		ctrl.delete(new Clients(8));
+		
+		ctrl.findById(2);
+		
+		
 
 	}
 
